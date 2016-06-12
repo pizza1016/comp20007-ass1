@@ -50,7 +50,7 @@ void insert(void *data, List *list);
 /* Inserts data into the tail of list or position equal to the next element */
 void insert_by(bool (*eq)(void *data, void *node), void *data, List *list);
 
-/* Inserts data into the tail of list. Returns true if sucessful,
+/* Inserts data into the tail of list. Returns true if successful,
  * false if it finds an element already equal to data */
 bool insert_if(bool (*eq)(void *data, void *node), void *data, List *list);
 
