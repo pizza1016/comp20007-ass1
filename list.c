@@ -95,7 +95,7 @@ void insert_by(bool (*eq)(void *data, void *node), void *data, List *list) {
         insert_by(eq, data, &(*list)->next);
 }
 
-/* Inserts data into the tail of list: returns true if sucessful,
+/* Inserts data into the tail of list: returns true if successful,
  * false if it finds an element already equal to data */
 bool insert_if(bool (*eq)(void *data, void *node), void *data, List *list) {
     if (!*list) {
